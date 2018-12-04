@@ -81,7 +81,7 @@ const event = {
       title: "Talks",
       name: "talks",
       type: "array",
-      of: [{ type: "talk" }]
+      of: [{ type: "reference", to: { type: "talk" } }]
     },
     {
       title: "URL",

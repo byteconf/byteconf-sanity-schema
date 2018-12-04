@@ -2,11 +2,17 @@ const event_speaker = {
   title: "Event Speaker",
   name: "event_speaker",
   type: "document",
+  preview: {
+    select: {
+      title: 'speaker.name',
+      subtitle: 'event.name'
+    }
+  },
   fields: [
     {
       title: "Available Live",
-      name: "status",
-      type: "number"
+      name: "available_live",
+      type: "boolean"
     },
     {
       title: "Event",

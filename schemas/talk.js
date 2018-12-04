@@ -17,7 +17,7 @@ const talk = {
     {
       title: "Level",
       name: "level",
-      type: "number"
+      type: "string"
     },
     {
       title: "Name",

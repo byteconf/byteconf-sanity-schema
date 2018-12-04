@@ -9,12 +9,6 @@ const speaker = {
       type: "string"
     },
     {
-      title: "Event",
-      name: "event",
-      type: "reference",
-      to: [{ type: "event" }]
-    },
-    {
       title: "Github",
       name: "github",
       type: "string"
@@ -38,7 +32,7 @@ const speaker = {
       title: "Event Speakers",
       name: "event_speakers",
       type: "array",
-      of: [{ type: "event_speaker" }]
+      of: [{ type: "reference", to: { type: "event_speaker" } }]
     },
     {
       title: "Website",
