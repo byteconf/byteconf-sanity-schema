@@ -59,7 +59,7 @@ const event = {
       title: "Event Speakers",
       name: "event_speakers",
       type: "array",
-      of: [{ type: "event_speaker" }]
+      of: [{ type: "reference", to: { type: "event_speaker" } }]
     },
     {
       title: "Sponsor Interest Link",
