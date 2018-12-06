@@ -40,6 +40,11 @@ const event = {
       type: "string"
     },
     {
+      title: "Published At",
+      name: "published_at",
+      type: "datetime"
+    },
+    {
       title: "RSVP URL",
       name: "rsvp_url",
       type: "string"
