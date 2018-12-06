@@ -26,7 +26,7 @@ const event = {
     {
       title: "Event Type",
       name: "event_type",
-      type: "number",
+      type: "string",
       validation: Rule => Rule.required()
     },
     {
