@@ -74,7 +74,7 @@ const event = {
     {
       title: "Status",
       name: "status",
-      type: "number",
+      type: "string",
       validation: Rule => Rule.required()
     },
     {
