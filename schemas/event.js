@@ -14,6 +14,11 @@ const event = {
       type: "string"
     },
     {
+      title: "Icon",
+      name: "icon",
+      type: "string"
+    },
+    {
       title: "Description",
       name: "description",
       type: "string"
@@ -40,9 +45,9 @@ const event = {
       type: "string"
     },
     {
-      title: "Published At",
-      name: "published_at",
-      type: "datetime"
+      title: "Published",
+      name: "published",
+      type: "boolean"
     },
     {
       title: "RSVP URL",
