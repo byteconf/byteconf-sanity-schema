@@ -94,6 +94,11 @@ const event = {
       of: [{ type: "reference", to: { type: "talk" } }]
     },
     {
+      title: "Twitter Announcement",
+      name: "twitter_announcement",
+      type: "string"
+    },
+    {
       title: "URL",
       name: "url",
       type: "string"
