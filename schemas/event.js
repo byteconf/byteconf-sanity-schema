@@ -108,6 +108,12 @@ const event = {
       name: 'youtube_playlist',
       type: 'string',
     },
+    {
+      title: 'Sponsorship Tiers',
+      name: 'sponsorship_tiers',
+      type: 'array',
+      of: [{ type: 'sponsorship_tier' }],
+    },
   ],
 }
 
