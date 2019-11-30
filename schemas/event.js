@@ -1,120 +1,130 @@
 const event = {
-  title: 'Event',
-  name: 'event',
-  type: 'document',
+  title: "Event",
+  name: "event",
+  type: "document",
   fields: [
     {
-      title: 'CFP Link',
-      name: 'cfp_link',
-      type: 'string',
+      title: "CFP Link",
+      name: "cfp_link",
+      type: "string"
     },
     {
-      title: 'Cover Path',
-      name: 'cover_path',
-      type: 'string',
+      title: "Cover Path",
+      name: "cover_path",
+      type: "string"
     },
     {
-      title: 'OG Meta Image Path',
-      name: 'og_meta_image_path',
-      type: 'string',
+      title: "OG Meta Image Path",
+      name: "og_meta_image_path",
+      type: "string"
     },
     {
-      title: 'Description',
-      name: 'description',
-      type: 'string',
+      title: "Description",
+      name: "description",
+      type: "string"
     },
     {
-      title: 'End Date',
-      name: 'end_date',
-      type: 'datetime',
+      title: "End Date",
+      name: "end_date",
+      type: "datetime"
     },
     {
-      title: 'Event Type',
-      name: 'event_type',
-      type: 'string',
-      validation: Rule => Rule.required(),
+      title: "Event Type",
+      name: "event_type",
+      type: "string",
+      validation: Rule => Rule.required()
     },
     {
-      title: 'Location',
-      name: 'location',
-      type: 'string',
+      title: "Location",
+      name: "location",
+      type: "string"
     },
     {
-      title: 'Name',
-      name: 'name',
-      type: 'string',
+      title: "Name",
+      name: "name",
+      type: "string"
     },
     {
-      title: 'Published',
-      name: 'published',
-      type: 'boolean',
+      title: "Published",
+      name: "published",
+      type: "boolean"
     },
     {
-      title: 'RSVP URL',
-      name: 'rsvp_url',
-      type: 'string',
+      title: "ConvertKit RSVP Form ID",
+      name: "ck_rsvp_form_id",
+      type: "string"
     },
     {
-      title: 'Simple Copy',
-      name: 'simple_copy',
-      type: 'string',
+      title: "ConvertKit RSVP Form UID",
+      name: "ck_rsvp_form_uid",
+      type: "string"
     },
     {
-      title: 'Slug',
-      name: 'slug',
-      type: 'string',
-      validation: Rule => Rule.required(),
+      title: "RSVP URL",
+      name: "rsvp_url",
+      type: "string"
     },
     {
-      title: 'Event Speakers',
-      name: 'event_speakers',
-      type: 'array',
-      of: [{ type: 'reference', to: { type: 'event_speaker' } }],
+      title: "Simple Copy",
+      name: "simple_copy",
+      type: "string"
     },
     {
-      title: 'Sponsor Interest Link',
-      name: 'sponsor_interest_link',
-      type: 'string',
+      title: "Slug",
+      name: "slug",
+      type: "string",
+      validation: Rule => Rule.required()
     },
     {
-      title: 'Start Date',
-      name: 'start_date',
-      type: 'datetime',
+      title: "Event Speakers",
+      name: "event_speakers",
+      type: "array",
+      of: [{ type: "reference", to: { type: "event_speaker" } }]
     },
     {
-      title: 'Status',
-      name: 'status',
-      type: 'string',
-      validation: Rule => Rule.required(),
+      title: "Sponsor Interest Link",
+      name: "sponsor_interest_link",
+      type: "string"
     },
     {
-      title: 'Talks',
-      name: 'talks',
-      type: 'array',
-      of: [{ type: 'reference', to: { type: 'talk' } }],
+      title: "Start Date",
+      name: "start_date",
+      type: "datetime"
     },
     {
-      title: 'Twitter Announcement',
-      name: 'twitter_announcement',
-      type: 'string',
+      title: "Status",
+      name: "status",
+      type: "string",
+      validation: Rule => Rule.required()
     },
     {
-      title: 'URL',
-      name: 'url',
-      type: 'string',
+      title: "Talks",
+      name: "talks",
+      type: "array",
+      of: [{ type: "reference", to: { type: "talk" } }]
     },
     {
-      title: 'YouTube Playlist',
-      name: 'youtube_playlist',
-      type: 'string',
+      title: "Twitter Announcement",
+      name: "twitter_announcement",
+      type: "string"
     },
     {
-      title: 'Sponsorship Tiers',
-      name: 'sponsorship_tiers',
-      type: 'array',
-      of: [{ type: 'sponsorship_tier' }],
+      title: "URL",
+      name: "url",
+      type: "string"
     },
-  ],
-}
+    {
+      title: "YouTube Playlist",
+      name: "youtube_playlist",
+      type: "string"
+    },
+    {
+      title: "Sponsorship Tiers",
+      name: "sponsorship_tiers",
+      type: "array",
+      of: [{ type: "sponsorship_tier" }]
+    }
+  ]
+};
 
-export default event
+export default event;
