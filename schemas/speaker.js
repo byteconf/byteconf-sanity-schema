@@ -19,6 +19,11 @@ const speaker = {
       type: "string"
     },
     {
+      title: "Image",
+      name: "image",
+      type: "image"
+    },
+    {
       title: "Static Image Path",
       name: "static_image_path",
       type: "string"
