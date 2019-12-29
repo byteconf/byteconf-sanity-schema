@@ -55,11 +55,6 @@ const event = {
       type: "string"
     },
     {
-      title: "ConvertKit RSVP Form UID",
-      name: "ck_rsvp_form_uid",
-      type: "string"
-    },
-    {
       title: "RSVP URL",
       name: "rsvp_url",
       type: "string"
