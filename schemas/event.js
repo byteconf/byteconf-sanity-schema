@@ -118,6 +118,11 @@ const event = {
       name: "sponsorship_tiers",
       type: "array",
       of: [{ type: "sponsorship_tier" }]
+    },
+    {
+      title: "Calendar File",
+      name: "calendar_file",
+      type: "file"
     }
   ]
 };
