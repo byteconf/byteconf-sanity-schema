@@ -6,7 +6,7 @@ const talk = {
     {
       title: "Description",
       name: "description",
-      type: "string"
+      type: "text"
     },
     {
       title: "Event",
@@ -45,7 +45,13 @@ const talk = {
       name: "time",
       type: "datetime"
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "name",
+      subtitle: "event.name"
+    }
+  }
 };
 
 export default talk;

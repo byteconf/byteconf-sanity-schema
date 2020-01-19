@@ -4,8 +4,8 @@ const event_speaker = {
   type: "document",
   preview: {
     select: {
-      title: 'speaker.name',
-      subtitle: 'event.name'
+      title: "speaker.name",
+      subtitle: "event.name"
     }
   },
   fields: [
@@ -26,7 +26,13 @@ const event_speaker = {
       type: "reference",
       to: [{ type: "speaker" }]
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "speaker.name",
+      subtitle: "event.name"
+    }
+  }
 };
 
 export default event_speaker;

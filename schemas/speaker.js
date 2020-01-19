@@ -34,12 +34,6 @@ const speaker = {
       type: "string"
     },
     {
-      title: "Event Speakers",
-      name: "event_speakers",
-      type: "array",
-      of: [{ type: "reference", to: { type: "event_speaker" } }]
-    },
-    {
       title: "Website",
       name: "website",
       type: "string"
