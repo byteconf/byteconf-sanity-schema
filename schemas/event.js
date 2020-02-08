@@ -9,6 +9,11 @@ const event = {
       type: "string"
     },
     {
+      title: "Cover",
+      name: "cover",
+      type: "image"
+    },
+    {
       title: "Cover Path",
       name: "cover_path",
       type: "string"
@@ -90,7 +95,11 @@ const event = {
       title: "Status",
       name: "status",
       type: "string",
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required(),
+      options: {
+        layout: "radio",
+        list: ["planning", "announced", "upcoming", "concluding", "finished"]
+      }
     },
     {
       title: "Talks",
