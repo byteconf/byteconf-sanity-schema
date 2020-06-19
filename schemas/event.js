@@ -6,134 +6,140 @@ const event = {
     {
       title: "CFP Link",
       name: "cfp_link",
-      type: "string"
+      type: "string",
     },
     {
       title: "Cover",
       name: "cover",
-      type: "image"
+      type: "image",
     },
     {
       title: "Cover Path",
       name: "cover_path",
-      type: "string"
+      type: "string",
     },
     {
       title: "OG Meta Image Path",
       name: "og_meta_image_path",
-      type: "string"
+      type: "string",
     },
     {
       title: "Description",
       name: "description",
-      type: "string"
+      type: "string",
     },
     {
       title: "End Date",
       name: "end_date",
-      type: "datetime"
+      type: "datetime",
     },
     {
       title: "Event Type",
       name: "event_type",
       type: "string",
-      validation: Rule => Rule.required()
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "Location",
       name: "location",
-      type: "string"
+      type: "string",
     },
     {
       title: "Name",
       name: "name",
-      type: "string"
+      type: "string",
     },
     {
       title: "Published",
       name: "published",
-      type: "boolean"
+      type: "boolean",
     },
     {
       title: "ConvertKit RSVP Form ID",
       name: "ck_rsvp_form_id",
-      type: "string"
+      type: "string",
     },
     {
       title: "RSVP URL",
       name: "rsvp_url",
-      type: "string"
+      type: "string",
     },
     {
       title: "Simple Copy",
       name: "simple_copy",
-      type: "string"
+      type: "string",
     },
     {
       title: "Slug",
       name: "slug",
       type: "string",
-      validation: Rule => Rule.required()
+      validation: (Rule) => Rule.required(),
     },
     {
       title: "Event Speakers",
       name: "event_speakers",
       type: "array",
-      of: [{ type: "reference", to: { type: "event_speaker" } }]
+      of: [{ type: "reference", to: { type: "event_speaker" } }],
     },
     {
       title: "Sponsor Interest Link",
       name: "sponsor_interest_link",
-      type: "string"
+      type: "string",
     },
     {
       title: "Start Date",
       name: "start_date",
-      type: "datetime"
+      type: "datetime",
     },
     {
       title: "Status",
       name: "status",
       type: "string",
-      validation: Rule => Rule.required(),
+      validation: (Rule) => Rule.required(),
       options: {
         layout: "radio",
-        list: ["planning", "announced", "upcoming", "concluding", "finished"]
-      }
+        list: ["planning", "announced", "upcoming", "concluding", "finished"],
+      },
     },
     {
       title: "Talks",
       name: "talks",
       type: "array",
-      of: [{ type: "reference", to: { type: "talk" } }]
+      of: [{ type: "reference", to: { type: "talk" } }],
     },
     {
       title: "Twitter Announcement",
       name: "twitter_announcement",
-      type: "string"
+      type: "string",
     },
     {
       title: "URL",
       name: "url",
-      type: "string"
+      type: "string",
     },
     {
       title: "YouTube Playlist",
       name: "youtube_playlist",
-      type: "string"
+      type: "string",
     },
     {
       title: "Sponsorship Tiers",
       name: "sponsorship_tiers",
       type: "array",
-      of: [{ type: "sponsorship_tier" }]
+      of: [{ type: "sponsorship_tier" }],
     },
     {
       title: "Calendar File",
       name: "calendar_file",
-      type: "file"
-    }
-  ]
+      type: "file",
+    },
+    {
+      title: "Organizers",
+      name: "organizers",
+      type: "array",
+      of: [{ type: "organizer" }],
+    },
+  ],
 };
 
 export default event;
